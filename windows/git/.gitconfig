@@ -1,0 +1,17 @@
+[user]
+	name = Wenjie Xu
+	email = wenjie.xu.cn@outlook.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[http]
+	sslverify = false
+[credential]
+	helper = manager
+[credential "helperselector"]
+	selected = manager
+[init]
+	defaultBranch = master
+[core]
+	editor = code --wait

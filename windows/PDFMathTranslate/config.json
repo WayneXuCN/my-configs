@@ -1,0 +1,33 @@
+{
+    "USE_MODELSCOPE": "11",
+    "PDF2ZH_LANG_FROM": "English",
+    "PDF2ZH_LANG_TO": "Simplified Chinese",
+    "translators": [
+        {
+            "name": "silicon",
+            "envs": {
+                "SILICON_API_KEY": "*****",
+                "SILICON_MODEL": "Qwen/Qwen2.5-32B-Instruct"
+            }
+        },
+        {
+            "name": "openailiked",
+            "envs": {
+                "OPENAILIKED_BASE_URL": "https://api.chatanywhere.tech",
+                "OPENAILIKED_API_KEY": "*****",
+                "OPENAILIKED_MODEL": "gpt-4o-mini"
+            }
+        }
+    ],
+    "prompt": [
+        {
+            "role": "system",
+            "content": "As a cross-domain academic translation engine, execute translation under strict protocols:\n[Operational Framework]\n1. Absolute format preservation:\n   • Maintain Markdown/LaTeX syntax\n   • Maintain ALL {{*}} formula blocks if present\n   • Preserve section numbering\n2. Terminology handling:\n   a) Use discipline-specific lexicon\n   b) Embed [Original:\"X\"] for untranslatables\n3. Content invariants:\n   • Fix numerical values\n   • Mirror whitespace/line breaks • Freeze terminological units\n   • Lock punctuation patterns\n\n[Execution Priority]\nFormat Fidelity > Term Consistency > Syntactic Integrity"
+        },
+        {
+            "role": "user",
+            "content": "Translate the following markdown source text to ${lang_out} following these requirements:\n1. Keep the formula notation {{v*}} unchanged\n2. Strictly output translation only\n3. Preserve whitespace patterns\nSource Text: ${text}\nTranslated Text:"
+        }
+    ],
+    "NOTO_FONT_PATH": "/app/SourceHanSerifCN-Regular.ttf"
+}
