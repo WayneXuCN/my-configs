@@ -1,0 +1,15 @@
+[user]
+	name = Wenjie Xu
+	email = wenjie.xu.cn@outlook.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[http]
+	sslverify = false
+[init]
+	defaultBranch = master
+[core]
+	editor = code --wait
+[credential]
+	helper = osxkeychain
