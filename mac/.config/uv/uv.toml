@@ -1,0 +1,5 @@
+cache-dir = "/Volumes/Work/Temporary/uv_cache"
+
+[[index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
